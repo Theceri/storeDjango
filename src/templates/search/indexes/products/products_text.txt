@@ -1,0 +1,4 @@
+{{ object.name }}
+{{object.photo}}
+{{ object.category }}
+{{ object.description }}

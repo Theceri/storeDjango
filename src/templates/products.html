@@ -1,0 +1,12 @@
+{% extends "base_home.html" %}
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<div class="stock"><div class="grid-sizer"></div>
+
+  {{ block.super }}
+    {% include "products_template.html" %}
+</div>
+{% endblock %}

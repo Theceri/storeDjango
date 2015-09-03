@@ -1,0 +1,16 @@
+{% load endless %}
+{% paginate records %}
+
+
+{% for product in records %}
+	
+	<div class="bagi"><a href="/view/{{product.object.name}}/{{product.object.id}}/">
+		<div class="alert alert-info" role="alert"><h5>{{product.object.name}}</h5></div>
+		
+		<img src="/media/{{product.object.photo}}">
+		<p><div class="btn btn-sm btn-block btn-success">KSH {{product.object.price}} </div></p>
+		</a>
+	</div>
+
+{% endfor %}
+{% show_more %}
